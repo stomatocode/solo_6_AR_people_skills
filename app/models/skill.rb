@@ -6,7 +6,7 @@ class Skill < ActiveRecord::Base
 
 
   def user_with_proficiency(rating)
-    sought_user = User.where(stuff)
+    self.users.where(rating: rating)
   end
 
 
