@@ -4,4 +4,10 @@ class Skill < ActiveRecord::Base
 
   validates :name, uniqueness: true
 
+
+  def user_with_proficiency(rating)
+    sought_user = User.where(stuff)
+  end
+
+
 end
